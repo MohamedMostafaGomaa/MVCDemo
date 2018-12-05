@@ -11,7 +11,7 @@ namespace MVCDemo.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest
-    {
+    {//test comment
         [TestMethod]
         public void Index()
         {
