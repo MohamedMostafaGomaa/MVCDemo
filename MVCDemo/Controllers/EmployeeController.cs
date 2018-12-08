@@ -88,5 +88,17 @@ namespace MVCDemo.Controllers
                 return View();
             }
         }
+
+        // GET: Employee/Details/5
+        //[OutputCache(Duration = int.MaxValue, VaryByParam = "id")]
+        [OutputCache(CacheProfile = "Cache10Min")]
+        public ActionResult Details(int id)
+        {
+            using (EmployeeDataModel context = new EmployeeDataModel())
+            {
+                var employee = context.Employees.SingleOrDefault(e => e.ID == id);
+                return View(employee);
+            }
+        }
     }
 }

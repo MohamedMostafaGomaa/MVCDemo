@@ -158,7 +158,6 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Models\DAL\Employee.cs" />
     <Compile Include="Models\DAL\EmployeeDataModel.cs" />
     <Compile Include="Filters\MyLogActionFilter.cs" />
     <Compile Include="Global.asax.cs">
@@ -212,6 +211,7 @@
     <Content Include="Views\Home\MyView.cshtml" />
     <Content Include="Views\Employee\Edit.cshtml" />
     <Content Include="Views\Employee\Create.cshtml" />
+    <Content Include="Views\Employee\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
