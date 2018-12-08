@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmployeeNames</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @*@foreach (string str in ViewBag.EmployeeNames)
+                {
+                    <li>@str</li>
+                }*@
+
+            @foreach (string str in (List<string>)ViewData["EmployeeNames"])
+            {
+                <li>@str .</li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

@@ -97,8 +97,42 @@ namespace MVCDemo.Controllers
             using (EmployeeDataModel context = new EmployeeDataModel())
             {
                 var employee = context.Employees.SingleOrDefault(e => e.ID == id);
+                TempData["EmployeeDetails"] = employee.Name + ", " + employee.Age;
                 return View(employee);
             }
         }
+
+        // Check TempData
+        public ActionResult EmployeeDetailsMessage()
+        {
+            ViewBag.EmployeeDetails = TempData["EmployeeDetails"];
+           // TempData.Keep("EmployeeDetails");
+            TempData.Peek("EmployeeDetails");
+
+            return View();
+        }
+
+
+        // Check View Bag and View Data
+        public ViewResult EmployeeNames()
+        {
+            using (EmployeeDataModel context = new EmployeeDataModel())
+            {
+                List<Employee> employess = context.Employees.ToList();
+                //var employees = from e in context.Employees
+                //                orderby e.ID
+                //                select e;
+
+                List<string> employessNames = employess.Select(x => x.Name).ToList();
+               // ViewBag.EmployeeNames = employessNames;
+
+                ViewData["EmployeeNames"] = employessNames;
+
+                return View();
+            }
+        }
+
+
+
     }
 }

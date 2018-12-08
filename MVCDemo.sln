@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSecurityDemo", "MVCSecur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSecurityDemo.Tests", "MVCSecurityDemo.Tests\MVCSecurityDemo.Tests.csproj", "{F8732C33-5740-4427-99F6-6BCE1720C07C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiDemo", "WebApiDemo\WebApiDemo.csproj", "{91B0AF09-5808-4C78-9B3A-FF251FF6E294}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F8732C33-5740-4427-99F6-6BCE1720C07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8732C33-5740-4427-99F6-6BCE1720C07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8732C33-5740-4427-99F6-6BCE1720C07C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B0AF09-5808-4C78-9B3A-FF251FF6E294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B0AF09-5808-4C78-9B3A-FF251FF6E294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B0AF09-5808-4C78-9B3A-FF251FF6E294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B0AF09-5808-4C78-9B3A-FF251FF6E294}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
